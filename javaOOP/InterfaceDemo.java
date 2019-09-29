@@ -1,5 +1,7 @@
 package javaOOP;
 
+import java.util.ArrayList;
+
 /*
 1) We can’t instantiate an interface in java. That means we cannot create the object of an interface
 
@@ -28,32 +30,32 @@ they are public, static and final.
 */
 
 interface A{
-	int i = 0;
+	int i = 42;
 	void print();
 }
 
 interface B{
-	int j = 0;
+	int j = 25;
 
-	void print();
+	static void print() {
+		System.out.println(A.i);
+	}
+
+	
 }
 /*
 A Java class can only extend one parent class. 
 Multiple inheritance (extends) is not allowed. 
 Interfaces are not classes, however, and a class can implement more than one interface.
 */
-class C implements A,B{
 
-	public void draw() {
-		
-	}
+/*
+ * 
+ * 11) An interface can extend any interface but cannot implement it. Class implements interface and interface extends interface.
 
-	@Override
-	public void print() {
-		
-	}
 	
-}
+	12) A class can implement any number of interfaces.
+ */
 
 
 
@@ -63,11 +65,12 @@ class C implements A,B{
 
 
 
-public class InterfaceDemo {
+public class InterfaceDemo implements B{
 
 	public static void main(String[] args) {
 
-		
+		InterfaceDemo i=new InterfaceDemo();
+		B.print();
 	}
 
 }
