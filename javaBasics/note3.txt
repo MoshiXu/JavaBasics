@@ -1,0 +1,58 @@
+OOP
+
+4 basic pillars of oops:
+Encapsulation
+Inheritance
+Abstraction
+Polymorphism
+
+Polymorphism: many forms
+Method Overloading:
+Separate methods with same name
+Rules:
+Methods should have same name
+But diff arguments: type/ number/ order
+Return type// access-modifier does not matter
+Method overriding
+Parent child relation
+Methods with same name
+Give a diff implementation to the existing method in child class.
+Signature of method should be same
+void m1(int a, int b)
+Return type could be same or co-variant (Parent-child)
+Access modifiers cannot be more restrictive in ur child
+  public<protected<default<private
+  
+  
+  
+  Access modifiers:
+
+Scope of the element (variable/ method/class/interface…..)
+
+Public: accessible to all packages/ classes
+Private: visible only to this particular class. 
+Protected: visible in this package and child classes in a diff package only using a child reference
+Default: visible only within the same package.
+
+Modifier:
+static block & instance block
+
+
+
+Constructor:
+Whenever we use a new operator, it calls the constructor of the class. If you don’t provide a constructor in ur class, compiler will add a default constructor for u
+1)  Name should be same as the class name
+2)  Should not have a return type
+3)  Any access modifier
+
+Default constructor is created with the access modifier same as that of the class.
+
+
+You can overload a constructor
+It is not possible to override a constructor.
+
+
+In one java file, you cannot have more than 1 public class. The name of the file should be same as the public class.
+
+Q) What all access modifiers can you use with a class?
+A)  public & default only.
