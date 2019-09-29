@@ -1,0 +1,58 @@
+
+a)	Public: accessible to all packages/ classes
+b)	Private: visible only to this particular class. 
+c)	Protected: visible in this package and child classes in a diff package only using a child reference
+d)	Default: visible only within the same package.
+
+continue
+return
+break
+
+
+instance block
+static block
+
+
+
+Object:
+1)  toString(): when u print an object, toString() method is called.
+2)  hashcode(): memory address int representation
+3)  equals(): 
+4)  getClass()
+
+equals and ==
+==  check if the reference points to the same object
+equals
+
+
+
+
+Class Loading:
+Java virtual machine: run my code. Classes should be loaded on jvm. Once the class is loaded, it will create your Class object which will have all metadata information about the class.
+When you run your application, it will first load all the classes from rt.jar. Then it will load the classes being used in ur application
+-verbose:class : vm argument
+
+ClassLoaders which are responsible for loading ur class (ClassLoader)
+Bootstrap classloader: native language: rt.jar
+Extension ClassLoader: java: ext folder
+Application ClassLoader: java: from classpath (ur classes)
+
+Delegation Responsibility principle: design pattern
+Bootstrap -> Extension -> Application
+
+
+
+String class
+
+Object/ primitive (byte,short,int,long,char,boolean,float,double)
+byte b=5;
+String class: extends Object
+
+Object: equals
+String extends Object
+String is a child class, Object is a parent class
+Object has a equals method (==). String has overridden this method i.e. it provided it’s own implementation: comparing the value
+String str=”hello”;
+String str2=”hello”;
+Sysout(str1.equals(str2)); //true
+
