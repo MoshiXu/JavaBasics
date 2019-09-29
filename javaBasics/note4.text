@@ -1,0 +1,107 @@
+native method
+
+make Class immutable: 
+1) remove setters
+2) fields be private
+3) constructor to initialize the values
+4) class should be final
+5) To the associated objects, never return the reference, always make a copy and return a new object
+
+final String[] str= {"abc"};//final object? //u cannot make the reference point to some other object
+
+
+
+Clone() method: Object class
+= operator: It will just add a new reference
+copy of the object: clone()
+
+java.lang.Object
+protected Object clone(){
+//shallow cloning
+}
+
+By Default Object class clone method: It creates a copy and returns u a new object
+
+CloneNotSupportedException
+
+Marker interface: interface without any method: 
+1)  Cloneable interface: contract
+2)  Serializable interface :
+It checks at runtime that when u try to clone an object, the class must implement Cloneable
+
+
+
+Q) What is the diff between string literal and string object
+Q) What is cloning? Types of cloning?
+Q) Object class clone method doing?
+Q) Diff between string and stringbuilder?
+Q) What is immutability? Advantage/ disadvantage? How do u create an immutable class?
+Q) What are the new features of java 8 (default, static of interface, java.time)
+Q) What is an abstract class/ interface?
+Q) super, this
+Q) Marker interface: cloneable
+
+
+Inheritance: extends/ implements
+
+Abstraction? abstract class/ interface?
+
+1) Multiple inheritance: class A extends B, C // not supported in java
+Class can extend only 1 class in java
+class A extends B{} //A is not a child of Object class?
+class A implements I1, I2{}
+2) Multi level inheritance
+
+
+
+Abstract class (incomplete) | concrete class
+
+abstract class A{
+
+	//abstract void m1();
+	
+}
+//We cannot create the object of this class
+A obj= new A();//compile time error
+//It can have 0 or more abstract methods (method without a body) 
+The child class should provide implementation for the abstract method or should be declared abstract.
+
+Q) Can an abstract class have a constructor? Yes 
+Q) Can u make the abstract class final?  No
+Q) Can u call a static in abstract class?
+Car.m1()? Yes
+
+
+
+interface?
+100 % abstract class: all abstract methods
+
+Q:  Purpose of creating an interface? Why you would create an interface?
+A:  Interface acts as a contract. All the child classes should have the functionality
+
+
+ Abstract methods, every child class can have it's own implementation.
+ 
+ 
+ Q) When you would create this Car class as an abstract class and when u would create it as a interface?
+
+1) Better: Interface for extensibility. Class can implement more than 1 interface
+But what exactly? Default functionality: abstract class
+instance variables
+
+interface can extends other interface
+interface cannot extend/ implement a class
+multiple interfaces is ok
+
+
+Java 8: modifications to interface
+
+interface can have default and static methods: backward compatibility
+
+java 9: private methods
+
+
+
+Regular expression
+
+
