@@ -53,10 +53,19 @@ byte b=5;
 String class: extends Object
 
 Object: equals
-String extends Object
+String extends Object,String overrides equals methods (values are same or no)
 String is a child class, Object is a parent class
 Object has a equals method (==). String has overridden this method i.e. it provided it’s own implementation: comparing the value
 String str=”hello”;
 String str2=”hello”;
 Sysout(str1.equals(str2)); //true
+
+
+two ways to create String 
+1.  String str= new String("hello") : new string object: heap
+
+2.  String str1= "hello"; //string literal: permgen space/ metaspace: string pool (shared )
+    String str="hello";//If the object already exist, it will just add a new reference.
+
+
 
