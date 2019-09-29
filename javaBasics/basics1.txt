@@ -1,0 +1,37 @@
+Class, object, inheritance, association
+
+data types (byte, short, int, long, foat, double, boolean, char, String)
+
+Variables: 
+1) Local variable: defined within a block/method. It should be initialized before it is used. It is not initialized by default.
+2) Instance Variables: which belongs to the object/instance of the class. Every object will have it's own copy.
+3) Class Variable/static : which belongs to the class. Shared among the objects.
+
+Instance variables and class variables are initialized by default.
+
+
+static:
+This can be used with a variable/ method/ class/block
+1) when variable is static=> It belongs to the class. Only one copy shared among the objects
+2) static method: It belongs to class. In  a static method/block you cannot access instance members but in instance methods, u can access static members.
+3) static block: 
+
+
+
+Constructor:
+Whenever u call a new operator, it will the constructor of the class.
+If you don't define a constructor in the class, the compiler will add a default constructor.
+1) It should not have a return type. If u put a return type in front of a constructor, it behaves like  a method
+2) Name of the constructor should be same as class name
+3) First line by default is the call to the parent constructor
+
+
+&: and gate only if both are true: answer true: It will always evaluate both the conditions even if the first is false.
+&&: and gate only if both are true: answer true. It will only evaluate the second expression if the first is true
+
+
+Java works:
+
+Source code -> compiler (javac/ eclipse compiler…) -> class file (bytecode: platform independent)  -> intermediary code which can only be understood by ur jvm.
+
+Class file -> (jvm/jre : specific to the machine)-> run this using interpreter (converts to machine language ->) (line by line)
