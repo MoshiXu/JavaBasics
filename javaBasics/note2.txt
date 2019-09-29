@@ -20,11 +20,15 @@ Object:
 3)  equals(): 
 4)  getClass()
 
+for each
+
 equals and ==
 ==  check if the reference points to the same object
 equals
 
 
+
+Arrays.sort
 
 
 Class Loading:
