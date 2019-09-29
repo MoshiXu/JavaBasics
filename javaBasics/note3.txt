@@ -47,9 +47,11 @@ Whenever we use a new operator, it calls the constructor of the class. If you do
 
 Default constructor is created with the access modifier same as that of the class.
 
+//1st line should either be a call to ur parent class constructor or ur child class constructor;
+
 
 You can overload a constructor
-It is not possible to override a constructor.
+You can't override a constructor.
 
 
 In one java file, you cannot have more than 1 public class. The name of the file should be same as the public class.
