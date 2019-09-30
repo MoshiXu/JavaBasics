@@ -1,0 +1,80 @@
+
+What are the advantages of Java?
+What is the difference between JDK/JRE/JVM?
+Is java pass by reference or pass by value?
+What is OOP?
+What are the four pillars of OOP?
+What is Polymorphism?
+What is Abstraction?
+What is Inheritance?
+What is Encapsulation?
+What are the scopes of a variable in Java?
+What are some naming conventions we use in Java?
+What is method overriding?
+What is method overloading?
+What implicit modifiers are present for variables in an interface?
+What is serialization? How do we serialize an object in Java? What is serialVersionUId?
+What are some methods of the Object class?
+What is garbage collection? Can you force Garbage collection? What are the algorithms used for GC?
+What is Cloning in java? How is it diff from assignment operator?
+What is a memory leak? How can you prevent that?
+What is reflection? Why is it used?
+What is class loading? Diff. types of class loaders?
+What is the difference between String, StringBuffer and StringBuilder?
+What is a  marker interface?
+What is serialization? How do we serialize an object in Java?
+What are some methods of the Object class?
+What are some methods of the Scanner class?
+What is varargs?
+How can we compare objects?
+What is the singleton design pattern?
+What is the factory design pattern?
+What is the use of the static keyword?
+What is the use of the final keyword?
+What is the use of the transient keyword?
+What is autoboxing and autounboxing?
+What is the difference between .equals and "=="?
+Describe OOPS principles
+What are the different types of variables in java?
+What are the ways of creating a thread in java?
+List some of the thread methods
+What is a synchronized keyword? Why is it used?
+Rules for method overloading and overriding?
+New java 8 features u studied? (date time api.. default/ static methods in interfaces)
+Diff in abstract class and interface?
+How can you sort an array?
+What is immutability How can you make an immutable class?
+Create a class and make it as a singleton using lazy initialization. Make sure it is thread safe. Also make sure that when you deserialize the class, it returns you the same object and when you try to clone the class object, it should return you the same object
+Different ways in which you can do serialization?
+Difference between i/o stream and reader/writer classes?
+Write code to split this string into array of strings: “cherry,apple,banana,kiwi,apple”
+What is the difference between checked exception and unchecked exception?
+What is the difference between throw and throws keyword?
+Diff in final , finally and finalize method?
+What is the diff between ClassNotFoundException and NoClassDefFoundError?
+How do you handle a NullPointerException in code?
+How do you handle a checked exception?
+Can we have a try block without catch block?
+What is the use of a finally block?
+What is the try-with-resource block?
+What is unreachable catch block error?
+ What is OutOfMemoryError in java?
+ Can we throw an exception manually? If yes, how?
+What is Re-throwing an exception in java?
+Can finally/ catch block throw an exception?
+Can a child class throw a new checked exception while overriding a method?
+ How do you create customized exceptions in java?
+What is ClassCastException in java?
+What is StackOverflowError in java?
+ What are chained exceptions in java?
+Which class is the super class for all types of errors and exceptions in java?
+Give examples for checked and unchecked exceptions
+What is the  diff between synchronized instance method and synchronized static method?
+What is the difference between start() and run() method of Thread class?
+What is race condition in Java? Given one example?
+Describe various thread states/ thread lifecycle
+What is the difference between Stack and Heap in Java?
+What is Garbage collection? Can you force Garbage Collection in java?
+What happens if a thread throws an Exception inside the synchronized block? Will it release the lock or no?
+Diff in run and start method in a thread?
+
