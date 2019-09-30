@@ -1,0 +1,83 @@
+ObjectInputStream: java object -> bytes/ObjectOutputStream : bytes-> java object (Serialization/Deserialization)
+
+Serializable: jvm : check whether ur class implements Serializable
+
+Marker Interface? Interface without any method (Cloneable)
+
+clone the object of a class: class implements Cloneable
+
+serialize the object of a class : class implements Serializable (contract)
+
+Serialization/Deserialization | Externalizable
+Reflection
+Exception handling
+
+
+File: get info about the file/ create file/dir
+
+InputStream/OutputStream(1 byte: binary data)		Reader/Writer(char: 1 char): write()
+
+FileInputStream/FileOutputStream				FileReader/FileWriter
+BufferedInputStream/OutputStream				BufferedReader/BufferedWriter
+
+(cannot deal with primitve datatypes)
+PrintWriter: Writer/ PrintStream
+
+class Employee{
+int id;
+String name;
+
+}
+
+Employee obj= new Employee();
+obj.id=1;
+obj.name="Payal";
+
+//save this to a file/
+//read it from the file?
+
+ObjectInputStream: java object -> bytes/ObjectOutputStream : bytes-> java object (Serialization/Deserialization)
+
+Serializable: jvm : check whether ur class implements Serializable
+
+Marker Interface? Interface without any method (Cloneable)
+
+interface Serializable{}
+
+contracts 
+
+clone the object of a class: class implements Cloneable
+
+serialize the object of a class : oostream.writeObject(): bytes : class implements Serializable (contract)
+
+
+Serialization/Deserialization | Externalizable
+Reflection
+Exception handling
+
+
+readObject(): new object
+It is not calling constructor of employee class: reflection
+
+Deserialization: it calls the constructor of the parent class which does not implement Serializable
+
+
+1) Associated properties should implement Serializable
+2) Parent implements Serializable, all child classes become serializable : Externalizable
+3) static fields are not serialized
+4) final fields can be serialized
+5) don't want this field to be serialized: Transient
+6) serialVersionUID: static/ final : this field is saved along with the object, when u deserialize the object, it will check that the version should be same. Whenever u modify the class, u shoudl update the ersion id
+7) Custom serialization and deserialization: readObject & writeObject
+
+
+
+
+versioning
+version: 1
+version: 2
+version: 3
+
+//track the changes
+
+3 people are reading from doc (version3)
