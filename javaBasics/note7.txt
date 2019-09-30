@@ -1,0 +1,11 @@
+Thread: extends Thread | implements Runnable, obj : Thread() 
+
+Thread lifecycle: new state, runnable (start()), scheduled -> running (run()) -> run ends -> dead
+
+sleep(): Timed waiting. Thread will wait for that much time
+
+t1.join(): current thread to wait for t1 to finish
+
+data is being shared among the threads, u need to acquire a lock. Dirty data
+AtomicInteger(), AtomicReference(), ++, --
+synchronized/ Lock interface
