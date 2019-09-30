@@ -1,0 +1,77 @@
+Factory method: objects
+
+
+Singleton design pattern
+
+design pattern: solution to the common problem
+
+class for which i just want 1 object to be created throughout: Singleton
+
+banking application: class CEO /
+
+database : connection pool?
+
+enum? custom datatype
+
+Gender gender= Gender.M; //M/F/null
+
+enum Gender{
+
+M, F
+}
+
+M: Male
+F: Female
+
+UI: Male/Female 		database: M/F (char)
+
+class A implements Cloneable{
+
+clone(){
+new A();
+}
+}
+
+class B extends A{ //If b should be a singleton
+public B clone(){
+throw new CloneNotSupportedException();
+{
+
+}
+
+?? Can b object be cloned?
+
+Garbage collector is a thread which runs in the background which is a low priority thread
+Main thread is running (high priority thread). CPU can only schedule 1 thread at a time if it is a single core CPU. Scheduler is a process which is responsible for schedulign ur therads. Scheduler has it's own algorithm for scheduling threads which entirely depends on ur OS. (round-robin/ first-come-first-served/ highest priority first).  
+You cannot force GC.  System.gc()/ Runtime.getRuntime().gc(): it will ask ur scheduler to schedule GC. 
+
+Object is ready for GC when :
+When u make the reference point to some other object
+Make the reference null
+Island of isolation: when 2 objects are pointing to each other but they don’t have any external reference
+
+
+
+class C{
+	D obj;
+}
+class D{
+	C obj;
+}
+
+public void demo() {
+		
+		C cobj= new C();
+		D dobj= new D();
+		cobj.obj= dobj;
+		dobj.obj= cobj;
+		cobj=null;
+		dobj=null;
+				
+	}
+
+
+Exception Handling
+
+Java IO/ serialization
+
