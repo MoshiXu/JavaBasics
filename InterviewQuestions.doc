@@ -78,3 +78,11 @@ What is Garbage collection? Can you force Garbage Collection in java?
 What happens if a thread throws an Exception inside the synchronized block? Will it release the lock or no?
 Diff in run and start method in a thread?
 
+Wait(), notify(), notifyAll(); Object class, why?
+diff lock interface & synchronized method/block
+Thread states: new runnable running -> waiting (wait) -> runnable(notify)-> 
+Timed Waiting (sleep): will not release the lock -> run method is done (dead)
+Comparable and Comparator?
+How hashset works?
+How Treeset works?
+ArrayList: sort?? Collections.sort(list, comparator);
