@@ -18,16 +18,20 @@ Using synchronized blocks could lead to deadlock.
 Deadlock can occur in a situation when a thread is waiting for an object lock, 
 that is acquired by another thread and second thread is waiting for an object lock that is acquired by first thread
 
-Difference between synchronized block and method 
+6. To prevent deadlock
+Order of lock: To prevent a deadlock, the order of acquiring locks should be in the same order. This would prevent a deadlock.
+Using Lock interface and specifying timeout: Lock is an interface, we may use the implementation class: Reentrant Lock.
+
+7. Difference between synchronized block and method 
 i is a local variable and the value is not being shared among threads.
 Using a synchronzied method in this case would slow down the operation. 
-
+ 1) Synchronized block generally reduce scope of lock
 
 execute in parrellel
 
 
 
-finallly won't run
+In which case where finallly won't run
 ----> try{syso.exit(0);}finally{}
  //terminate the program
 
