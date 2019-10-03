@@ -1,0 +1,5 @@
+1.
+Multiprocessing: When we have more than 1 CPU, we say it is multi-processing when running more than 1 program at the same time.
+Multitherading: When we have more than 1 thread running in parallel to perform multiple tasks within an application.
+
+2.
