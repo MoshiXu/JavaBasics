@@ -42,6 +42,9 @@ transient
 volatile
 native
 
+9. Can overridden methods have different return types?
+Yes
+
 In which case where finallly won't run
 ----> try{syso.exit(0);}finally{}
  //terminate the program
