@@ -29,7 +29,18 @@ Using a synchronzied method in this case would slow down the operation.
 
 execute in parrellel
 
+8. Access and Non Access Modifiers in Java
+Access 
+ public, private, and protected.
 
+Non Access Modifiers in Java
+ static
+final
+abstract
+synchronized
+transient
+volatile
+native
 
 In which case where finallly won't run
 ----> try{syso.exit(0);}finally{}
